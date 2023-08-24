@@ -32,7 +32,7 @@ public class Maze {
 		} else {
 			maze[x][y] = PATH;
 
-			//  북, 동, 남, 서 순으로 탐색한다.
+			//  북, 동, 남, 서 순으로 탐색한다. 2차원 배열 행과 열을 생각
 			if (findMazePath(x - 1, y) || findMazePath(x, y + 1) || findMazePath(x + 1, y) || findMazePath(x, y - 1)) {
 				return true;
 			}
